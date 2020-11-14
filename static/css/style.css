@@ -72,3 +72,7 @@ textarea {
 	outline: none;
 	margin-top: 1rem;
 }
+
+.btn:hover {
+    background:#130f0f;
+}
