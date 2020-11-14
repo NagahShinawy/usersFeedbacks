@@ -24,7 +24,7 @@ def submit():
         # ################## saving to db & check customer ##################
         is_customer_exists = session.query(Feedback).filter(Feedback.customer == customer)
         if is_customer_exists.count() > 0:
-            message = 'Already Submit'
+            message = 'Already Submit Before'
             return render_template('index.html', message=message)
         else:
             feedback = Feedback(customer, dealer, rating, comments)
